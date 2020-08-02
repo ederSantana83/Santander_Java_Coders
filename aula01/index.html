@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!--utf8 permite caracteres como ;^~ -->
+    <meta charset="UTF-8"> 
+    <!--permite renderização para browsers de celular -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <style> /*Este style tem precedência sobre o arquivo externo*/
+        body {
+        background-color: red;
+        font-family: sans-serif; /*fonte mais agradável na web*/
+        text-align: center
+        }
+    </style>  
+    <title>Document</title>
+</head>
+<body style="background-color: blueviolet;"> <!-- 1º na ordemd e precedência-->
+    <h1> Título principal </h1>
+    <h2> Subtítulo </h2>
+    <h3> Outro subtítulo </h3>
+    <h4> Mais um </h4>
+    <h5> Outro, por que não? </h5>
+    <h6> Agora sim, o último </h6>
+    
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim eaque libero, minus, magni maxime optio obcaecati, ullam laboriosam odio id ducimus. Natus neque veniam velit aut, facere voluptatem dicta?</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo deleniti in autem dicta, praesentium temporibus ipsa perferendis! Voluptas quisquam quasi placeat fuga corporis sunt, voluptatum dolorum, atque aperiam voluptatem delectus.</p>    
+    <!-- type = 1, A, I, i, a, start=10 -->
+    <ol start=10>
+        <li>Item da lista</li>
+        <li>Item da lista</li>
+        <li>Item da lista</li>
+    </ol>
+    <!-- type = , disc, circle, square -->
+    <ul type="square">
+        <li>Item da lista</li>
+        <li>Item da lista</li>
+        <li>Item da lista</li>
+    </ul>
+
+    <ul>
+        <li>Item da lista com lista aninhada
+            <ol type="1">
+                <li>Item da lista aninhada</li>
+                <li>Item da lista aninhada</li>
+            </ol>
+        </li>    
+        <li>Item da lista</li>
+        <li>Item da lista</li>    
+    </ul>
+
+</body>
+</html>

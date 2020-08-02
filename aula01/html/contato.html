@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css2/estilos.css">
+    <title>Contato</title>
+</head>
+<body>
+    <h2 id="principal"><strong>Formulário de Contato</strong></h2>
+
+    <form action="">
+        <label for="name">Nome e Sobrenome:</label><br>
+        <input type="text" id="name" name="name" value="seu nome" required/><br><br>   
+        <label for="email">E-mail:</label><br>
+        <input type="email" name="email" placeholder="user@email.com" required/><br><br>
+        <label for="projeto">Assunto da Mensagem:</label><br>
+        <select name="projeto" id="">
+            <optgroup label="Projetos">
+                <option value="vazio"></option>
+                <option value="Front End">Front End</option>
+                <option value="Back End">Back End</option>
+                <option value="Banco de Dados">Banco de Dados</option>        
+            </optgroup>  
+        </select> <br><br>
+        <label for="">Gênero:</label><br>
+        <label for="">Masc:</label><input type="radio" name="estado_civil" value="solteiro">
+        <label for="">Fem:</label><input type="radio" name="estado_civil" value="casado"> 
+        <br><br>    
+        <label for="">Passatempos:</label><br>
+        <input type="checkbox" name="hobbies" value="piano"><label for="">Piano</label><br>
+        <input type="checkbox" name="hobbies" value="contrabaixo"><label for="">Contrabaixo</label><br>
+        <input type="checkbox" name="hobbies" value="viagens"><label for="">Viagens</label><br>
+        <input type="checkbox" name="hobbies" value="violão"><label for="">Violão</label><br>
+        <input type="checkbox" name="hobbies" value="programação"><label for="">Programação</label><br>
+        <br>
+        <label for="comment">Comentários:</label><br>
+        <textarea name="comment" id="comment" cols="50" rows="10" style="resize: none;" required></textarea>
+        <br><br>
+        <button type="submit">Enviar</button>
+        <button type="reset">Excluir</button>    
+     </form>   
+        <br> <br>
+
+
+    <a href="../index2.html">Currículo Eder Sant'ana</a><br>
+    <a href="../html/hobbies.html">Hobbies</a>
+</body>
+</html>

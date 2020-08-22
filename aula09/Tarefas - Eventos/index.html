@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarefas</title>
+    <script>
+     
+     function alteraCor(){
+        document.getElementById("body").style.backgroundColor = "green";
+     }
+     function vendoImagem(){
+         console.log("Estou vendo a imagem");
+     }
+
+     document.addEventListener("click", clickImagem);
+     document.addEventListener("click", defVermelho);
+
+     function clickImagem(){ 
+         var image = document.getElementById("img2");
+         var img = image.title;
+         console.log("Estou clicando na imagem " + img);
+         var coordenadas = image.getBoundingClientRect();
+         console.log("Posição x: " + coordenadas.left + ", Posição y: " + coordenadas.top);
+     }
+
+     function defVermelho(){
+        document.getElementById("body").style.backgroundColor = "red";
+     }
+     
+     function removeListener(){
+         document.removeEventListener("click", clickImagem);
+         document.removeEventListener("click", defVermelho);
+         alteraCor();
+     }
+
+     function Enviar(){
+         alert("Não é possível enviar");
+     }
+
+     (function tempoEsgotado(){
+        setTimeout(function(){
+             alert("Tempo esgotado!")
+         }, 10000);
+     })();
+
+     (function aCadaCinco(){
+         setTimeout(function(){
+            alert("Hora do intervalo")
+         }, 5000);
+     })();
+    
+     function stopTimeout(){
+         clearTimeout(tempoEsgotado());
+         clearTimeout(aCadaCinco());
+     }
+
+    </script>
+
+
+</head>
+<body id="body">
+    
+    <button onclick="alert('olá')">Cumprimentar</button>
+    <button onclick="alteraCor()">Alterar Cor</button>
+    <br/><br/><br/>
+    <img src="imagem.jpg" title="Imagem1" alt="Imagem1" onmouseover="vendoImagem()">
+    <br/><br/><br/>
+    <img id="img2" src="imagem2.jpg" title="Imagem2" alt="Imagem2">
+    <br/><br/><br/>
+    <button onclick="removeListener()">Remove Listeners</button>
+    <br/><br/><br/>
+
+    <form action="www.google.com.br">
+        <p>Formulário exercício</p>
+        <label>Nome:</label><br> 
+        <input type="text" placeholder="Digite seu nome"><br> 
+        <label>Endereço:</label><br> 
+        <input type="text" placeholder="Digite seu endereço"><br>
+        <label>Telefone:</label><br> 
+        <input type="text" placeholder="Digite seu telefone"><br> 
+        <label>E-mail:</label><br> 
+        <input type="text" placeholder="Digite seu e-mail"><br><br>  
+        <button onclick="Enviar()">Enviar</button>
+    </form>
+    <br/><br/>
+    <button onclick="clearTimeout()">Clear Timeout</button>
+
+</body>
+</html>

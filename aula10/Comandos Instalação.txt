@@ -1,0 +1,11 @@
+Json Server
+npm install -g json-server
+
+Dentro da pasta arquivo do DB
+cd projeto
+json-server db.json
+
+Caso de erro de política:
+set-executionpolicy remotesigned
+
+http://localhost:3000/users

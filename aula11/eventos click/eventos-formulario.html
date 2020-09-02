@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <script src="/jquery/jquery-2.2.1.js"></script>
+
+    <script type="text/javascript">  
+
+        $(document).ready(function(){
+
+            $("#option").change(function(){
+
+                alert("Opção alterada")
+
+            });
+
+            $(".campo1").mouseenter(function(){
+                alert("O mouse entrou no elemento")
+            });
+        });
+
+    </script>
+
+</head>
+<body>
+
+    <div id="div1"></div>
+
+        <!-- click | dblclick | mousedown | mouseover | mouseout -->
+    <br>
+    
+    
+
+    <input class="campo1" type="text">            
+       
+        <!-- keydown | keypress | keyup -->
+
+    <select name="" id="option">
+        <option value="">Criança</option>
+        <option value="">Adolescente</option>
+        <option value="">Adulto</option>
+    </select>    
+                
+        <!-- focus | blur | change -->
+
+    
+</body>
+</html>

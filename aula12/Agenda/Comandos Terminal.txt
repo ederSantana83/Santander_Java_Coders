@@ -1,0 +1,65 @@
+BACKEND:
+
+cd Agenda
+json-server db.json
+
+FRONTEND:
+instalar Angular:
+npm install -g @angular/cli
+
+Criar a aplicação:
+ng new agenda
+routes (n)
+css (Css)
+
+cd agenda
+npm start
+
+IMPORTAÇÕES
+import { FormsModule }  from '@angular/forms';
+inserir FormsModule no array de imports;
+
+Criar componente:
+ng g c painel-agenda --skip-tests
+
+Criar um vetor dentro de painel-agenda.component;
+
+Criar um service: para buscar os dados no backend
+ng g s agenda --skip-tests
+
+Importar: import { HttpClient } from '@angular/common/http';
+
+Instalar primeng:
+npm install primeng --save
+npm install primeicons --save
+npm install @angular/animations --save
+
+Importar: import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+em app.modules.ts
+
+Styles:
+Inserir em angular.json em styles:
+
+"node_modules/primeicons/primeicons.css",
+"node_modules/primeng/resources/themes/saga-blue/theme.css",
+"node_modules/primeng/resources/primeng.min.css"
+
+Tabela primeng:
+Instalar: npm install @angular/cdk --save
+
+Importar: import {TableModule} from 'primeng/table';
+em app.module.ts
+
+npm install primeflex --save
+
+Ir em primeag Table Page:
+[paginator]="true" [rows]="10"
+
+Instalar Bootstrap no Angular:
+npm install bootstrap --save
+"node_modules/bootstrap/dist/css/bootstrap.css",
+
+
+
+
+
